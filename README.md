@@ -37,6 +37,10 @@ make kb-vectorize
 
 # 启动应用服务
 make dev
+
+source /data/zyq/FlowServe/.venv/bin/activate
+
+uvicorn app.main:app --port 8000
 ```
 
 完成后访问 [http://localhost:8000](http://localhost:8000) 进入聊天界面。
